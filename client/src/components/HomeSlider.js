@@ -3,6 +3,7 @@ import bg1 from '../assets/img/bg1.jpg';
 import bg2 from '../assets/img/bg2.jpg';
 import bg3 from '../assets/img/bg3.jpg';
 import Carousel from 'react-bootstrap/Carousel';
+import { Link } from 'react-router-dom';
 
 class HomeSlider extends React.Component {
 
@@ -16,7 +17,7 @@ class HomeSlider extends React.Component {
             alt="First slide"
           />
           <Carousel.Caption>
-            <p><a href="../SignIn.js" className="btn btn-primary btn-lg btn-learn">Login / Sign up</a></p>
+            <p><Link to="/signin" className="btn btn-primary btn-lg btn-learn">Login / Sign up</Link></p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -27,7 +28,7 @@ class HomeSlider extends React.Component {
           />
 
           <Carousel.Caption>
-            <p><a href="#" className="btn btn-primary btn-lg btn-learn">Login / Sign up</a></p>
+            <p><Link to="/signin" className="btn btn-primary btn-lg btn-learn">Login / Sign up</Link></p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -38,7 +39,7 @@ class HomeSlider extends React.Component {
           />
 
           <Carousel.Caption>
-            <p><a href="#" className="btn btn-primary btn-lg btn-learn">Login / Sign up</a></p>
+            <p><Link to="/signin" className="btn btn-primary btn-lg btn-learn">Login / Sign up</Link></p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

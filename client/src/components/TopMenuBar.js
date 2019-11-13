@@ -7,7 +7,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import Icon from "@material-ui/core/Icon";
-import Link from "@material-ui/core/Link";
+//import Link from "@material-ui/core/Link";
+import { Link } from 'react-router-dom'
 
 class TopMenuBar extends React.Component {
   render() {
@@ -16,14 +17,14 @@ class TopMenuBar extends React.Component {
         <div className="container">
           <div className="row">
             <div className="col-md-2">
-              <div id="logo"><a href="/flagcamp/gofitness-web/">{'GoFitness'}</a></div>
+              <div id="logo"><Link to="/">{'GoFitness'}</Link></div>
             </div>
             <Col className="col-md-10 text-right menu">
               <ul>
-                <li className="active"><a href="/flagcamp/gofitness-web/">{'Home'}</a></li>
-                <li><a href="/flagcamp/gofitness-web/">{'Classes'}</a></li>
-                <li><a href="/flagcamp/gofitness-web/">{'Trainers'}</a></li>
-                <li><a href="/flagcamp/gofitness-web/">{'About'}</a></li>
+                <li className="active"><Link to="/">{'Home'}</Link></li>
+                <li><Link to="/classes">{'Classes'}</Link></li>
+                <li><Link to="/trainerinfo">{'Trainers'}</Link></li>
+                <li><Link to="/about">{'About'}</Link></li>
               </ul>
             </Col>
           </div>
