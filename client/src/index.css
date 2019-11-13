@@ -3,7 +3,8 @@
 @import './styles/animate.css';
 @import '/node_modules/flexslider/flexslider.css';
 @import './styles/SignInForm.css';
-@import 'SignIn.css';
+@import './styles/SignIn.css';
+@import './styles/SignUp.css';
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,900');
 
 body {
