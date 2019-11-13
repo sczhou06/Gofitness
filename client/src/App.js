@@ -20,8 +20,6 @@ function App() {
     <div>
 
       <BrowserRouter>
-          <TopMenuBar />
-          <HomeSlider />
           <Route path={'/'} exact component={Home}/>
           <Route path={'/classes'} exact component={Classes}/>
           <Route path={'/about'} exact component={About}/>

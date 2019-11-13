@@ -1,11 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import {BrowserRouter, Link} from 'react-router-dom';
+import TopMenuBar from "../components/TopMenuBar"
+import HomeSlider from "../components/HomeSlider"
 
 const Home = () => {
   return (
       <div>
-          <li className="active"><Link to="/">{'Home'}</Link></li>
-          <li className="active"><Link to="/signup">{'Signup'}</Link></li>
+        <TopMenuBar />
+        <HomeSlider />
       </div>
   );
 };
