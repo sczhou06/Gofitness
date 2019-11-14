@@ -1,10 +1,22 @@
-@import '/node_modules/flexslider/flexslider.css';
 
 #home-slider {
   min-height: 600px;
   width: 100%;
   float: left;
 }
+
+.loginBtn{
+  position: absolute;
+  right: 15%;
+  bottom: 20px;
+  left: 15%;
+  z-index: 10;
+  padding-top: 0px;
+  padding-bottom: 80px;
+  color: #fff;
+  text-align: center;
+}
+
 
 #home-slider .btn {
   font-size: 18px;

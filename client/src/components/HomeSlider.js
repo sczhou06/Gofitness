@@ -16,9 +16,9 @@ class HomeSlider extends React.Component {
             src={bg1}
             alt="First slide"
           />
-          <Carousel.Caption>
-            <p><Link to="/signin" className="btn btn-primary btn-lg btn-learn">Login / Sign up</Link></p>
-          </Carousel.Caption>
+          <div className="loginBtn">
+            <h3><Link to="/signin" className="btn btn-primary btn-lg btn-learn">Login / Sign up</Link></h3>
+          </div>
         </Carousel.Item>
         <Carousel.Item>
           <img
@@ -27,9 +27,9 @@ class HomeSlider extends React.Component {
             alt="Second slide"
           />
 
-          <Carousel.Caption>
+          <div className="loginBtn">
             <p><Link to="/signin" className="btn btn-primary btn-lg btn-learn">Login / Sign up</Link></p>
-          </Carousel.Caption>
+          </div>
         </Carousel.Item>
         <Carousel.Item>
           <img
@@ -38,9 +38,9 @@ class HomeSlider extends React.Component {
             alt="Third slide"
           />
 
-          <Carousel.Caption>
+          <div className="loginBtn">
             <p><Link to="/signin" className="btn btn-primary btn-lg btn-learn">Login / Sign up</Link></p>
-          </Carousel.Caption>
+          </div>
         </Carousel.Item>
       </Carousel>
 
