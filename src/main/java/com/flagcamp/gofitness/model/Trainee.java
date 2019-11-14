@@ -11,10 +11,10 @@ import java.util.Set;
 @Component
 public class Trainee {
 
-    @Field("first_name")
-    private String firstName;
-    @Field("last_name")
-    private String lastName;
+    @Field(name = "first_name")
+    private String firstname;
+    @Field(name = "last_name")
+    private String lastname;
     @Indexed(unique = true)
     @NotEmpty(message = "email cannot be empty!")
     private String email;
@@ -26,9 +26,9 @@ public class Trainee {
     public Trainee() {
 
     }
-    public Trainee(String firstName, String lastName, String email, String password) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+    public Trainee(String firstname, String lastname, String email, String password) {
+        this.firstname = firstname;
+        this.lastname = lastname;
         this.email = email;
         this.password = password;
     }
@@ -49,20 +49,20 @@ public class Trainee {
         this.tags = tags;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getFirstname() {
+        return firstname;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getLastname() {
+        return lastname;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
     }
 
     public String getEmail() {

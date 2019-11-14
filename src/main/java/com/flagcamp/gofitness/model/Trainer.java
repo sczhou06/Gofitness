@@ -14,9 +14,9 @@ import java.util.Set;
 public class Trainer {
 
     @Field("first_name")
-    private String firstName;
+    private String firstname;
     @Field("last_name")
-    private String lastName;
+    private String lastname;
     @Indexed(unique = true)
     @NotEmpty(message = "email cannot be empty!")
     private String email;
@@ -26,9 +26,9 @@ public class Trainer {
     private Set<String> tags;
     private Set<TrainerReservation> trainerReservations;
 
-    public Trainer(String firstName, String lastName, String email, String password) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+    public Trainer(String firstname, String lastname, String email, String password) {
+        this.firstname = firstname;
+        this.lastname = lastname;
         this.email = email;
         this.password = password;
         this.trainerReservations = new HashSet<>();
@@ -39,6 +39,10 @@ public class Trainer {
 
     public Set<String> getCategories() {
         return categories;
+    }
+
+    public void setTrainerReservations(Set<TrainerReservation> trainerReservations) {
+        this.trainerReservations = trainerReservations;
     }
 
     public void setCategories(Set<String> categories) {
@@ -61,20 +65,20 @@ public class Trainer {
         this.trainerReservations.add(trainerReservation);
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getFirstname() {
+        return firstname;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getLastname() {
+        return lastname;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
     }
 
     public String getEmail() {
