@@ -1,9 +1,10 @@
 import React from "react";
+import TopMenuBarAuth from "../components/TopMenuBarAuth"
 
 const Chat = () =>{
     return (
         <div>
-            Chat
+            <TopMenuBarAuth/>
         </div>
     );
 };

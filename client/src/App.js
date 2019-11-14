@@ -13,6 +13,7 @@ import SignUp from "./pages/SignUp";
 import TrainerHome from "./pages/TrainerHome";
 import TraineeHome from "./pages/TraineeHome";
 import TrainerList from "./pages/TrainerList";
+import Classroom from "./pages/Classroom"
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route path={'/trainer'} exact component={TrainerHome}/>
           <Route path={'/trainee'} exact component={TraineeHome}/>
           <Route path={'/trainerinfo'} exact component={TrainerList}/>
+          <Route path={'/classroom'} exact component={Classroom}/>
     </BrowserRouter>
     </div>
     /**/

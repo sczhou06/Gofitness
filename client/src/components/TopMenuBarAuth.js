@@ -22,8 +22,8 @@ class TopMenuBarAuth extends React.Component {
             <Col className="col-md-10 text-right menu">
               <ul>
                 <li className="active"><Link to="/">{'Home'}</Link></li>
-                <li><Link to="/classes">{'Chats'}</Link></li>
-                <li><Link to="/trainerinfo">{'Classroom'}</Link></li>
+                <li><Link to="/chat">{'Chats'}</Link></li>
+                <li><Link to="/classroom">{'Classroom'}</Link></li>
                 <li><Link to="/about">{'About'}</Link></li>
               </ul>
             </Col>
