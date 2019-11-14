@@ -17,9 +17,11 @@ class TraineeBanner extends React.Component {
       }}>
         <Container>
           <Row>
-            <div className="col-sm-12">
-              <h1 className="banner-title">Classes</h1>
+            <div className="col-sm-10">
+              <h1 className="banner-title">Available Trainers</h1>
+              <p className="banner-right">Next Class:</p>
             </div>
+            <p className="appointment">Time/Date</p>
           </Row>
         </Container>
       </div>
