@@ -1,0 +1,41 @@
+.trainerInfo {
+  display: table;
+  width: 100%;
+  text-align: center;
+}
+
+.trainerImg {
+  display: table-cell;
+  height: 300px;
+  margin: auto;
+  position: relative;
+  vertical-align: middle;
+}
+
+.trainerName {
+  vertical-align: middle;
+}
+
+.chatBtn {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #fff;
+  padding: 5px 10px !important;
+  border: none;
+}
+
+.chatBtn.btn-learn {
+  color: #fff;
+  background: #9870FC;
+  /* Old browsers */
+  background: -moz-linear-gradient(45deg, #DC2F2F 0%, #9870FC 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #DC2F2F 0%, #9870FC 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: -o-linear-gradient(45deg, #DC2F2F 0%, #9870FC 100%);
+  background: linear-gradient(45deg, #DC2F2F 0%, #9870FC 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#DC2F2F', endColorstr='#9870FC', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+}
