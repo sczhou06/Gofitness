@@ -1,16 +1,19 @@
 import React from "react";
-import {Link} from "react-router-dom"
+import {Link} from "react-router-dom";
 import {
   Form,
   Radio,
   Button,
+  Input,
+  Checkbox,
 } from 'antd';
+import 'antd/dist/antd.css';
 
 
 class SignUpForm extends React.Component {
 
   render() {
-
+    const {getFieldDecorator} = this.props.form;
     const formItemLayout = {
       labelCol: {
         xs: { span: 24 },
@@ -36,12 +39,44 @@ class SignUpForm extends React.Component {
 
     return (
       <div className="signUpForm">
-        <Form {...formItemLayout}>
+        <Form {...formItemLayout} onSubmit={this.handleSubmit}>
           <Form.Item label="I'm a">
-            <Radio.Group>
-              <Radio value="trainer">trainer</Radio>
-              <Radio value="trainee">trainee</Radio>
-            </Radio.Group>
+            {getFieldDecorator('radio-group')(
+              <Radio.Group>
+                <Radio value="trainer">trainer</Radio>
+                <Radio value="trainee">trainee</Radio>
+              </Radio.Group>,
+            )}
+          </Form.Item>
+          <Form.Item label="First Name">
+            <Input
+              placeholder="First Name"
+            />
+          </Form.Item>
+          <Form.Item label="Last Name">
+            <Input
+              placeholder="Last Name"
+            />
+          </Form.Item>
+          <Form.Item label="E-mail">
+            <Input
+              placeholder="E-mail Address"
+            />
+          </Form.Item>
+          <Form.Item label="Password">
+            <Input
+              placeholder="Password"
+            />
+          </Form.Item>
+          <Form.Item label="Classes">
+            <Checkbox.Group>
+              <Checkbox>Fitness</Checkbox>
+              <Checkbox>Yoga</Checkbox>
+              <Checkbox>Boxing</Checkbox>
+              <Checkbox>Palates</Checkbox>
+              <Checkbox>HIIT</Checkbox>
+              <Checkbox>Taichi</Checkbox>
+            </Checkbox.Group>
           </Form.Item>
           <Form.Item>
             <Button type="primary" htmlType="submit">
@@ -55,7 +90,6 @@ class SignUpForm extends React.Component {
   }
 }
 
-const WrappedRegistrationForm = Form.create({ name: 'register' })("SignUpForm");
+const WrappedRegistrationForm = Form.create({ name: 'register' })(SignUpForm);
 
-
-export default SignUpForm;
+export default WrappedRegistrationForm;

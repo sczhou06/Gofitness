@@ -1,9 +1,9 @@
 import React from "react";
-import SignUpForm from "../components/SignUpForm";
+import WrappedRegistrationForm from "../components/SignUpForm";
 import pagebg from "../assets/img/pagebg.jpg"
 import TopMenuBar from "../components/TopMenuBar"
 
-const SignUp = () =>{
+function SignUp (){
     return (
         <div>
           <img
@@ -11,9 +11,9 @@ const SignUp = () =>{
             src={pagebg}
           />
           <TopMenuBar/>
-          <SignUpForm/>
+          <WrappedRegistrationForm />
         </div>
     );
-};
+}
 
 export default SignUp;

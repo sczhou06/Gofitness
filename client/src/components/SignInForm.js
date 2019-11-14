@@ -35,8 +35,5 @@ class SignInForm extends React.Component {
     );
   }
 }
-const WrappedNormalLoginForm = Form.create({ name: 'normal_login' })("SignInForm");
-
-
 
 export default SignInForm;
