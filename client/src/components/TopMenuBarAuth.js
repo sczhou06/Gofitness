@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom'
 class TopMenuBarAuth extends React.Component {
   render() {
     return(
-      <div className="top-menu" role="navigation">
+      <div className="top-menu-bar" role="navigation">
         <div >
           <div className="row">
             <div className="col-md-2">
