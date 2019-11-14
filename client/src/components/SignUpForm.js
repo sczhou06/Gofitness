@@ -7,7 +7,7 @@ import {
   Input,
   Checkbox,
 } from 'antd';
-import 'antd/dist/antd.css';
+
 
 
 class SignUpForm extends React.Component {
