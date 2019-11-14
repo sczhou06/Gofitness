@@ -4,6 +4,23 @@ import {Link} from "react-router-dom"
 import GoogleAuth from "./GoogleAuth";
 
 class SignInForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      email: "",
+      password: ""
+    };
+  }
+
+  handleLogin = (e) => {
+
+  }
+
+  setUserInfo(event, key) {
+    let obj = {};
+    obj[key] = event.target.value;
+    this.setState(obj);
+  }
 
   render() {
     return (
@@ -15,18 +32,27 @@ class SignInForm extends React.Component {
               className="formInput"
               prefix={<Icon type="user" className="signInIcon" />}
               placeholder="Username"
+              type="text" onChange={ (e) => {
+                this.setUserInfo(e, "email")
+            }}
             />
           </Form.Item>
           <Form.Item>
             <Input
               className="formInput"
               prefix={<Icon type="lock" className="signInIcon" />}
-              type="password"
+              type="password" onChange={ (e) => {
+                this.setUserInfo(e, "password")
+            }}
               placeholder="Password"
+
             />
           </Form.Item>
           <Form.Item className="register-link">
-            <Button type="primary" htmlType="submit" className="login-form-button">
+            <Button type="submit" onClick={ () => {
+              alert(this.state.email + ":" + this.state.password);
+            }}
+                    className="login-form-button">
               Log in
             </Button>
 
