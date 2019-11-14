@@ -14,7 +14,7 @@ class TopMenuBar extends React.Component {
   render() {
     return(
       <div className="top-menu" role="navigation">
-        <div className="container">
+        <div >
           <div className="row">
             <div className="col-md-2">
               <div id="logo"><Link to="/">{'GoFitness'}</Link></div>

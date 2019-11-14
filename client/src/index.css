@@ -5,6 +5,7 @@
 @import './styles/SignInForm.css';
 @import './styles/SignIn.css';
 @import './styles/SignUp.css';
+@import '/node_modules/antd/dist/antd.css';
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,900');
 
 body {
