@@ -9,7 +9,6 @@ import {
 } from 'antd';
 
 
-
 class SignUpForm extends React.Component {
 
   render() {
