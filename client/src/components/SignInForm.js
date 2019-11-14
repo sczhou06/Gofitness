@@ -1,6 +1,7 @@
 import React from "react";
 import { Form, Icon, Input, Button } from 'antd';
 import {Link} from "react-router-dom"
+import GoogleAuth from "./GoogleAuth";
 
 class SignInForm extends React.Component {
 
@@ -27,7 +28,8 @@ class SignInForm extends React.Component {
           <Form.Item className="register-link">
             <Button type="primary" htmlType="submit" className="login-form-button">
               Log in
-            </Button>
+            </Button>>
+            <GoogleAuth/>
             <p> Or <Link to="/signup">register now!</Link> </p>
           </Form.Item>
         </Form>

@@ -11,10 +11,8 @@ function SignIn() {
         className="page overlay"
         src={pagebg}
       />
-      <GoogleAuth />
       <TopMenuBar />
       <SignInForm />
-
     </div>
   );
 }

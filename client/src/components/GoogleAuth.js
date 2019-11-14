@@ -20,13 +20,34 @@ class GoogleAuth extends React.Component{
         this.setState({isSignedIn: this.auth.isSignedIn.get()});
     };
 
+    onSignIn = () => {
+        this.auth.signIn();
+    }
+    onSignOut = () => {
+        this.auth.signOut();
+    }
     renderAuthButton(){
         if(this.state.isSignedIn ===null){
-            return <div>no idea</div>
+            return <div>google</div>;
         }else if (this.state.isSignedIn){
-            return <div>signed in</div>
+            return (
+                <div>
+                    <button onClick={this.onSignOut} type="primary" htmlType="submit" className="login-form-button">
+                    <i className={'google icon'} />
+                    Sign Out
+                    </button>
+                </div>
+
+            );
         }else{
-            return <div>unsigned in</div>
+            return  (
+                <div>
+                    <button onClick={this.onSignIn} type="primary" htmlType="submit" className="login-form-button">
+                        <i className={'google icon'} />
+                        Sign In
+                    </button>
+                </div>
+            );
         }
     }
     render(){
