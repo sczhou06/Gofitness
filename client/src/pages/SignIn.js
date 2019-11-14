@@ -2,7 +2,7 @@ import React from 'react';
 import pagebg from '../assets/img/pagebg.jpg';
 import TopMenuBar from "../components/TopMenuBar";
 import SignInForm from "../components/SignInForm"
-
+import GoogleAuth from "../components/GoogleAuth"
 
 function SignIn() {
   return(
@@ -11,6 +11,7 @@ function SignIn() {
         className="page overlay"
         src={pagebg}
       />
+      <GoogleAuth />
       <TopMenuBar />
       <SignInForm />
 
