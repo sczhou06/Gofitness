@@ -16,6 +16,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/trainer")
+@CrossOrigin(origins = "http://localhost:3000")
 public class TrainerController {
 
     @Autowired
@@ -63,5 +64,6 @@ public class TrainerController {
         }
         return map;
     }
+
 
 }
