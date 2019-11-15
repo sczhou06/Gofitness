@@ -2,6 +2,7 @@ import React from "react";
 import { Form, Icon, Input, Button } from 'antd';
 import {Link} from "react-router-dom"
 import GoogleAuth from "./GoogleAuth";
+import $ from 'jquery';
 
 class SignInForm extends React.Component {
   constructor(props) {
@@ -38,7 +39,11 @@ class SignInForm extends React.Component {
     }).then(res => res.json()).then(
       data => {
         if (data.status === 'OK') window.alert('Success');
-        else window.alert('failed')
+        else if (data.status === 'invalid email') window.alert('Invalid Email');
+        else if (data.status === 'email cannot be empty!') window.alert('Email cannot be empty!');
+        else if (data.status === 'password cannot be empty!') window.alert('Password cannot be empty!');
+        else if (data.status === 'invalid password') window.alert('Invalid Password');
+        else window.alert('Failed')
       }
     )
   }
